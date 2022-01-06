@@ -13,6 +13,10 @@
 		059D8FAE278670F9000FDEC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8F9C278670F8000FDEC1 /* ContentView.swift */; };
 		059D8FAF278670F9000FDEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059D8F9D278670F9000FDEC1 /* Assets.xcassets */; };
 		059D8FB0278670F9000FDEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059D8F9D278670F9000FDEC1 /* Assets.xcassets */; };
+		059D8FBA27867166000FDEC1 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8FB927867166000FDEC1 /* TimerData.swift */; };
+		059D8FBB27867166000FDEC1 /* TimerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8FB927867166000FDEC1 /* TimerData.swift */; };
+		059D8FBD278675FA000FDEC1 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8FBC278675FA000FDEC1 /* SecondView.swift */; };
+		059D8FBE278675FA000FDEC1 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8FBC278675FA000FDEC1 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,8 @@
 		059D8FA2278670F9000FDEC1 /* ObservableTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D8FA8278670F9000FDEC1 /* ObservableTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		059D8FAA278670F9000FDEC1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		059D8FB927867166000FDEC1 /* TimerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerData.swift; sourceTree = "<group>"; };
+		059D8FBC278675FA000FDEC1 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 			children = (
 				059D8F9B278670F8000FDEC1 /* ObservableTestApp.swift */,
 				059D8F9C278670F8000FDEC1 /* ContentView.swift */,
+				059D8FBC278675FA000FDEC1 /* SecondView.swift */,
+				059D8FB927867166000FDEC1 /* TimerData.swift */,
 				059D8F9D278670F9000FDEC1 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -178,6 +186,8 @@
 			files = (
 				059D8FAD278670F9000FDEC1 /* ContentView.swift in Sources */,
 				059D8FAB278670F9000FDEC1 /* ObservableTestApp.swift in Sources */,
+				059D8FBD278675FA000FDEC1 /* SecondView.swift in Sources */,
+				059D8FBA27867166000FDEC1 /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +197,8 @@
 			files = (
 				059D8FAE278670F9000FDEC1 /* ContentView.swift in Sources */,
 				059D8FAC278670F9000FDEC1 /* ObservableTestApp.swift in Sources */,
+				059D8FBE278675FA000FDEC1 /* SecondView.swift in Sources */,
+				059D8FBB27867166000FDEC1 /* TimerData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +342,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -360,7 +372,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
