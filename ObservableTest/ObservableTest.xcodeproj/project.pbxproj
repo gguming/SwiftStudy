@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		056B546427881E5000903435 /* ListContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B546327881E5000903435 /* ListContentView.swift */; };
 		056B546627881F9400903435 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B546527881F9400903435 /* ToDoItem.swift */; };
+		056B54692788268000903435 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B54682788268000903435 /* Draw.swift */; };
 		059D8FAB278670F9000FDEC1 /* ObservableTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8F9B278670F8000FDEC1 /* ObservableTestApp.swift */; };
 		059D8FAC278670F9000FDEC1 /* ObservableTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8F9B278670F8000FDEC1 /* ObservableTestApp.swift */; };
 		059D8FAD278670F9000FDEC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059D8F9C278670F8000FDEC1 /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		056B546327881E5000903435 /* ListContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContentView.swift; sourceTree = "<group>"; };
 		056B546527881F9400903435 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		056B54682788268000903435 /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 		059D8F9B278670F8000FDEC1 /* ObservableTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTestApp.swift; sourceTree = "<group>"; };
 		059D8F9C278670F8000FDEC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		059D8F9D278670F9000FDEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 			path = ListNavigation;
 			sourceTree = "<group>";
 		};
+		056B54672788251500903435 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				056B54682788268000903435 /* Draw.swift */,
+			);
+			path = Draw;
+			sourceTree = "<group>";
+		};
 		059D8F95278670F8000FDEC1 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		059D8F9A278670F8000FDEC1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				056B54672788251500903435 /* Draw */,
 				056B546227881E2700903435 /* ListNavigation */,
 				059D8F9B278670F8000FDEC1 /* ObservableTestApp.swift */,
 				056B546127881E0F00903435 /* Observable */,
@@ -206,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056B54692788268000903435 /* Draw.swift in Sources */,
 				059D8FAD278670F9000FDEC1 /* ContentView.swift in Sources */,
 				059D8FAB278670F9000FDEC1 /* ObservableTestApp.swift in Sources */,
 				056B546627881F9400903435 /* ToDoItem.swift in Sources */,
