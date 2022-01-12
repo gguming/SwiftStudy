@@ -22,15 +22,15 @@ class SearchBar: UISearchBar {
     // PublishRelay ui에 특화되어 있음 onNext만 받음
     // 버튼은 값을 전달하는것이 아니라 이벤트만 전달하기 때문에 void 사용
     
-    let searchButtonTapped = PublishRelay<Void>()
-    
-    // SearchBar 외부로 방출할 이벤트
-    
-    var shouldLoadResult = Observable<String>.of("")
+//    let searchButtonTapped = PublishRelay<Void>()
+//
+//    // SearchBar 외부로 방출할 이벤트
+//
+//    var shouldLoadResult = Observable<String>.of("")
     
     override init(frame: CGRect) {
         super .init(frame: frame)
-        bind()
+//        bind()
         attribute()
         layout()
     }
@@ -40,9 +40,13 @@ class SearchBar: UISearchBar {
     }
     
     // rx를 사용할 때 vc와 ui를 bind 하는 작업
-    private func bind() {
+    func bind(_ viewModel: SearchBarViewModel) {
         // searchBar button tapped
         // keyboard search button tapped
+        
+        self.rx.text
+            .bind(to: viewModel.queryText)
+            .disposed(by: disposeBag)
         
         Observable
             .merge(
@@ -50,19 +54,16 @@ class SearchBar: UISearchBar {
                 searchButton.rx.tap.asObservable()
             )
         // 버튼 클릭 이벤트를 searchButtonTapped로 전달
-            .bind(to: searchButtonTapped)
+            .bind(to: viewModel.searchButtonTapped)
             .disposed(by: disposeBag)
         
         // 타이핑이 끝났다고 간주하
-        searchButtonTapped
+        viewModel.searchButtonTapped
             .asSignal()
             .emit(to: self.rx.endEditing)
             .disposed(by: disposeBag)
         
-        self.shouldLoadResult = searchButtonTapped
-            .withLatestFrom(self.rx.text) { $1 ?? ""}
-            .filter {!$0.isEmpty }
-            .distinctUntilChanged()
+        
     }
     
     // 뷰를 꾸미는 코드
