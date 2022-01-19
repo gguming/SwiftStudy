@@ -21,8 +21,16 @@ struct ContentView: View {
                   ]
     
     var body: some View {
-        List(friend, id: \.id) { friend in
-            Text("\(friend.name)")
+//        List(friend, id: \.id) { friend in
+//            Text("\(friend.name)")
+//        }
+        
+        List(friend.indices) { index in
+            let friend = friend[index]
+            HStack {
+                Text("\(index + 1)")
+                Text("\(friend.name)")
+            }
         }
     }
 }
