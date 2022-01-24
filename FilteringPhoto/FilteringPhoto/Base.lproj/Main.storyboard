@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--카메라 필터-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FilteringPhoto" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,23 +20,34 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-aL-hvM">
                                 <rect key="frame" x="0.0" y="88" width="414" height="672"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48V-Xm-IlP">
+                                <rect key="frame" x="174" y="802" width="66" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="필터 적용"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="48V-Xm-IlP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0SO-ac-z75"/>
+                            <constraint firstItem="48V-Xm-IlP" firstAttribute="top" secondItem="mO1-aL-hvM" secondAttribute="bottom" constant="42" id="Eet-BU-uog"/>
                             <constraint firstItem="mO1-aL-hvM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Esa-Ac-Lcz"/>
                             <constraint firstItem="mO1-aL-hvM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HEu-Ot-DNF"/>
                             <constraint firstItem="mO1-aL-hvM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="TWb-Zo-PkM"/>
                             <constraint firstItem="mO1-aL-hvM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="acu-Oc-BpX"/>
+                            <constraint firstItem="48V-Xm-IlP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="174" id="uln-ef-hE0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7H4-E8-3Dy">
+                    <navigationItem key="navigationItem" title="카메라 필터" id="7H4-E8-3Dy">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zx5-HE-Hbb">
                             <connections>
                                 <segue destination="o5x-Y4-enZ" kind="presentation" id="U8d-x8-qxZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="photoImageView" destination="mO1-aL-hvM" id="nFr-lV-14X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,19 +62,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PCA-R7-s6F">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OPe-6L-Br6">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="OPe-6L-Br6" customClass="PhotoCollectionViewCell" customModule="FilteringPhoto" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="phm-s1-EUt">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tLO-qH-pcS">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="tLO-qH-pcS" secondAttribute="bottom" id="46w-sC-PLK"/>
+                                        <constraint firstAttribute="trailing" secondItem="tLO-qH-pcS" secondAttribute="trailing" id="TNw-fl-Gd4"/>
+                                        <constraint firstItem="tLO-qH-pcS" firstAttribute="leading" secondItem="phm-s1-EUt" secondAttribute="leading" id="oEa-Nd-Vv5"/>
+                                        <constraint firstItem="tLO-qH-pcS" firstAttribute="top" secondItem="phm-s1-EUt" secondAttribute="top" id="uuG-e0-EEq"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="image" destination="tLO-qH-pcS" id="SQc-8T-f9k"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
