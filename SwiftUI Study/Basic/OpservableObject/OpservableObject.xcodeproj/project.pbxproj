@@ -7,28 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0578655127992DE3005F2588 /* StateNBindingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578655027992DE3005F2588 /* StateNBindingApp.swift */; };
-		0578655327992DE3005F2588 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578655227992DE3005F2588 /* ContentView.swift */; };
-		0578655527992DE4005F2588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0578655427992DE4005F2588 /* Assets.xcassets */; };
-		0578655827992DE4005F2588 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0578655727992DE4005F2588 /* Preview Assets.xcassets */; };
-		0578655F27993829005F2588 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0578655E27993829005F2588 /* Binding.swift */; };
-		057A43AB279F8346004E3208 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43AA279F8346004E3208 /* Episode.swift */; };
-		057A43AD279F83D6004E3208 /* EpisodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43AC279F83D6004E3208 /* EpisodeView.swift */; };
+		057A43BB279F8AA4004E3208 /* OpservableObjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43BA279F8AA4004E3208 /* OpservableObjectApp.swift */; };
+		057A43BD279F8AA4004E3208 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43BC279F8AA4004E3208 /* ContentView.swift */; };
+		057A43BF279F8AA5004E3208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057A43BE279F8AA5004E3208 /* Assets.xcassets */; };
+		057A43C2279F8AA5004E3208 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057A43C1279F8AA5004E3208 /* Preview Assets.xcassets */; };
+		057A43C9279F8AFA004E3208 /* FancyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43C8279F8AFA004E3208 /* FancyTimer.swift */; };
+		057A43CB279F8C7E004E3208 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43CA279F8C7E004E3208 /* UserSettings.swift */; };
+		057A43CD279F8CB0004E3208 /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43CC279F8CB0004E3208 /* UserSettingsView.swift */; };
+		057A43D1279F8EA6004E3208 /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A43D0279F8EA6004E3208 /* FancyScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0578654D27992DE3005F2588 /* StateNBinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateNBinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0578655027992DE3005F2588 /* StateNBindingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateNBindingApp.swift; sourceTree = "<group>"; };
-		0578655227992DE3005F2588 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0578655427992DE4005F2588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0578655727992DE4005F2588 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0578655E27993829005F2588 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
-		057A43AA279F8346004E3208 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
-		057A43AC279F83D6004E3208 /* EpisodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeView.swift; sourceTree = "<group>"; };
+		057A43B7279F8AA4004E3208 /* OpservableObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpservableObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		057A43BA279F8AA4004E3208 /* OpservableObjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpservableObjectApp.swift; sourceTree = "<group>"; };
+		057A43BC279F8AA4004E3208 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		057A43BE279F8AA5004E3208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		057A43C1279F8AA5004E3208 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		057A43C8279F8AFA004E3208 /* FancyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTimer.swift; sourceTree = "<group>"; };
+		057A43CA279F8C7E004E3208 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		057A43CC279F8CB0004E3208 /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
+		057A43D0279F8EA6004E3208 /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0578654A27992DE3005F2588 /* Frameworks */ = {
+		057A43B4279F8AA4004E3208 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,96 +40,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0578654427992DE3005F2588 = {
+		057A43AE279F8AA4004E3208 = {
 			isa = PBXGroup;
 			children = (
-				0578654F27992DE3005F2588 /* StateNBinding */,
-				0578654E27992DE3005F2588 /* Products */,
+				057A43B9279F8AA4004E3208 /* OpservableObject */,
+				057A43B8279F8AA4004E3208 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0578654E27992DE3005F2588 /* Products */ = {
+		057A43B8279F8AA4004E3208 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0578654D27992DE3005F2588 /* StateNBinding.app */,
+				057A43B7279F8AA4004E3208 /* OpservableObject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0578654F27992DE3005F2588 /* StateNBinding */ = {
+		057A43B9279F8AA4004E3208 /* OpservableObject */ = {
 			isa = PBXGroup;
 			children = (
-				057A43A8279F829A004E3208 /* BindingTest */,
-				0578655027992DE3005F2588 /* StateNBindingApp.swift */,
-				0578655227992DE3005F2588 /* ContentView.swift */,
-				0578655427992DE4005F2588 /* Assets.xcassets */,
-				0578655627992DE4005F2588 /* Preview Content */,
-				0578655E27993829005F2588 /* Binding.swift */,
+				057A43BA279F8AA4004E3208 /* OpservableObjectApp.swift */,
+				057A43BC279F8AA4004E3208 /* ContentView.swift */,
+				057A43CE279F8E5D004E3208 /* OtherObservableExample */,
+				057A43CF279F8E7A004E3208 /* EnvironmentObject */,
+				057A43BE279F8AA5004E3208 /* Assets.xcassets */,
+				057A43C0279F8AA5004E3208 /* Preview Content */,
+				057A43C8279F8AFA004E3208 /* FancyTimer.swift */,
 			);
-			path = StateNBinding;
+			path = OpservableObject;
 			sourceTree = "<group>";
 		};
-		0578655627992DE4005F2588 /* Preview Content */ = {
+		057A43C0279F8AA5004E3208 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				0578655727992DE4005F2588 /* Preview Assets.xcassets */,
+				057A43C1279F8AA5004E3208 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		057A43A8279F829A004E3208 /* BindingTest */ = {
+		057A43CE279F8E5D004E3208 /* OtherObservableExample */ = {
 			isa = PBXGroup;
 			children = (
-				057A43A9279F8337004E3208 /* Model */,
-				057A43AC279F83D6004E3208 /* EpisodeView.swift */,
+				057A43CA279F8C7E004E3208 /* UserSettings.swift */,
+				057A43CC279F8CB0004E3208 /* UserSettingsView.swift */,
 			);
-			path = BindingTest;
+			path = OtherObservableExample;
 			sourceTree = "<group>";
 		};
-		057A43A9279F8337004E3208 /* Model */ = {
+		057A43CF279F8E7A004E3208 /* EnvironmentObject */ = {
 			isa = PBXGroup;
 			children = (
-				057A43AA279F8346004E3208 /* Episode.swift */,
+				057A43D0279F8EA6004E3208 /* FancyScoreView.swift */,
 			);
-			path = Model;
+			path = EnvironmentObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0578654C27992DE3005F2588 /* StateNBinding */ = {
+		057A43B6279F8AA4004E3208 /* OpservableObject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0578655B27992DE4005F2588 /* Build configuration list for PBXNativeTarget "StateNBinding" */;
+			buildConfigurationList = 057A43C5279F8AA5004E3208 /* Build configuration list for PBXNativeTarget "OpservableObject" */;
 			buildPhases = (
-				0578654927992DE3005F2588 /* Sources */,
-				0578654A27992DE3005F2588 /* Frameworks */,
-				0578654B27992DE3005F2588 /* Resources */,
+				057A43B3279F8AA4004E3208 /* Sources */,
+				057A43B4279F8AA4004E3208 /* Frameworks */,
+				057A43B5279F8AA4004E3208 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StateNBinding;
-			productName = StateNBinding;
-			productReference = 0578654D27992DE3005F2588 /* StateNBinding.app */;
+			name = OpservableObject;
+			productName = OpservableObject;
+			productReference = 057A43B7279F8AA4004E3208 /* OpservableObject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0578654527992DE3005F2588 /* Project object */ = {
+		057A43AF279F8AA4004E3208 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					0578654C27992DE3005F2588 = {
+					057A43B6279F8AA4004E3208 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 0578654827992DE3005F2588 /* Build configuration list for PBXProject "StateNBinding" */;
+			buildConfigurationList = 057A43B2279F8AA4004E3208 /* Build configuration list for PBXProject "OpservableObject" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,45 +138,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 0578654427992DE3005F2588;
-			productRefGroup = 0578654E27992DE3005F2588 /* Products */;
+			mainGroup = 057A43AE279F8AA4004E3208;
+			productRefGroup = 057A43B8279F8AA4004E3208 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0578654C27992DE3005F2588 /* StateNBinding */,
+				057A43B6279F8AA4004E3208 /* OpservableObject */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0578654B27992DE3005F2588 /* Resources */ = {
+		057A43B5279F8AA4004E3208 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0578655827992DE4005F2588 /* Preview Assets.xcassets in Resources */,
-				0578655527992DE4005F2588 /* Assets.xcassets in Resources */,
+				057A43C2279F8AA5004E3208 /* Preview Assets.xcassets in Resources */,
+				057A43BF279F8AA5004E3208 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0578654927992DE3005F2588 /* Sources */ = {
+		057A43B3279F8AA4004E3208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0578655327992DE3005F2588 /* ContentView.swift in Sources */,
-				057A43AB279F8346004E3208 /* Episode.swift in Sources */,
-				0578655F27993829005F2588 /* Binding.swift in Sources */,
-				0578655127992DE3005F2588 /* StateNBindingApp.swift in Sources */,
-				057A43AD279F83D6004E3208 /* EpisodeView.swift in Sources */,
+				057A43CD279F8CB0004E3208 /* UserSettingsView.swift in Sources */,
+				057A43BD279F8AA4004E3208 /* ContentView.swift in Sources */,
+				057A43CB279F8C7E004E3208 /* UserSettings.swift in Sources */,
+				057A43D1279F8EA6004E3208 /* FancyScoreView.swift in Sources */,
+				057A43BB279F8AA4004E3208 /* OpservableObjectApp.swift in Sources */,
+				057A43C9279F8AFA004E3208 /* FancyTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0578655927992DE4005F2588 /* Debug */ = {
+		057A43C3279F8AA5004E3208 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		0578655A27992DE4005F2588 /* Release */ = {
+		057A43C4279F8AA5004E3208 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,14 +293,14 @@
 			};
 			name = Release;
 		};
-		0578655C27992DE4005F2588 /* Debug */ = {
+		057A43C6279F8AA5004E3208 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StateNBinding/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OpservableObject/Preview Content\"";
 				DEVELOPMENT_TEAM = ZY7J8GW45P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -310,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sun.StateNBinding;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.OpservableObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,14 +322,14 @@
 			};
 			name = Debug;
 		};
-		0578655D27992DE4005F2588 /* Release */ = {
+		057A43C7279F8AA5004E3208 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StateNBinding/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"OpservableObject/Preview Content\"";
 				DEVELOPMENT_TEAM = ZY7J8GW45P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -339,7 +343,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sun.StateNBinding;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sun.OpservableObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,25 +354,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0578654827992DE3005F2588 /* Build configuration list for PBXProject "StateNBinding" */ = {
+		057A43B2279F8AA4004E3208 /* Build configuration list for PBXProject "OpservableObject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0578655927992DE4005F2588 /* Debug */,
-				0578655A27992DE4005F2588 /* Release */,
+				057A43C3279F8AA5004E3208 /* Debug */,
+				057A43C4279F8AA5004E3208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0578655B27992DE4005F2588 /* Build configuration list for PBXNativeTarget "StateNBinding" */ = {
+		057A43C5279F8AA5004E3208 /* Build configuration list for PBXNativeTarget "OpservableObject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0578655C27992DE4005F2588 /* Debug */,
-				0578655D27992DE4005F2588 /* Release */,
+				057A43C6279F8AA5004E3208 /* Debug */,
+				057A43C7279F8AA5004E3208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0578654527992DE3005F2588 /* Project object */;
+	rootObject = 057A43AF279F8AA4004E3208 /* Project object */;
 }
