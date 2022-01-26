@@ -28,12 +28,20 @@ class LocationInformationViewController: UIViewController {
         mapView.delegate = self
         locationManager.delegate = self
         
-        bind(viewModel:)
+        bind(viewModel)
         attribute()
         layout()
     }
     
     private func bind(_ viewModel: LocationInformationViewModel) {
+        viewModel.setMapCenter
+            .emit(to: mapView.rx.setMapCenterPoint)
+            .disposed(by: disposeBag)
+        
+        viewModel.errorMessage
+            .emit(to: self.rx.presentAlert)
+            .disposed(by: disposeBag)
+        
         currentLocationButton.rx.tap
             .bind(to: viewModel.currentLocationButtonTapped)
             .disposed(by: disposeBag)
@@ -83,7 +91,7 @@ extension LocationInformationViewController: CLLocationManagerDelegate {
             return
             
         default:
-            //            viewModel.mapViewError.accept()
+            viewModel.mapViewError.accept(MTMapViewError.locationAuthorizationDenied.errorDescription)
             return
         }
     }
@@ -93,21 +101,47 @@ extension LocationInformationViewController: MTMapViewDelegate {
     // 현재의 위치를 지속적으로 업데이트 해주는 메소드
     func mapView(_ mapView: MTMapView!, updateCurrentLocation location: MTMapPoint!, withAccuracy accuracy: MTMapLocationAccuracy) {
         #if DEBUG
-        // viewModel.currentLocation.accept()
+        viewModel.currentLocation.accept(MTMapPoint(geoCoord: MTMapPointGeo(latitude: 37.394225, longitude: 127.110341)))
         #else
-        // viewModel.currentLocation.accept(location)
+         viewModel.currentLocation.accept(location)
         #endif
     }
     
     func mapView(_ mapView: MTMapView!, finishedMapMoveAnimation mapCenterPoint: MTMapPoint!) {
-        // viewModel.mapCenterPoint.accept(mapCenterPoint)
+         viewModel.mapCenterPoint.accept(mapCenterPoint)
     }
     
     func mapView(_ mapView: MTMapView!, selectedPOIItem poiItem: MTMapPOIItem!) -> Bool {
-        // viewModel.selectPOIItem.accept(poiItem)
+         viewModel.selectPOIItem.accept(poiItem)
+        return false
     }
     
     func mapView(_ mapView: MTMapView!, failedUpdatingCurrentLocationWithError error: Error!) {
-        // viewModel.mapViewError.accept(error.localizedDescription)
+         viewModel.mapViewError.accept(error.localizedDescription)
     }
 }
+        
+extension Reactive where Base: MTMapView {
+    var setMapCenterPoint: Binder<MTMapPoint> {
+        return Binder(base) { base, point in
+            base.setMapCenter(point, animated: true)
+        }
+    }
+        
+}
+
+extension Reactive where Base: LocationInformationViewController {
+    var presentAlert: Binder<String> {
+        return Binder(base) { base, message in
+            let alertController = UIAlertController(title: "문제가 발생했습니다.", message: message, preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "확인", style: .default, handler: nil)
+            
+            alertController.addAction(action)
+            base.present(alertController, animated: true, completion: nil)
+        }
+    }
+}
+        
+        
+        

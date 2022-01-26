@@ -57,6 +57,7 @@
 		0579B7BA279FF27B00DEF4FF /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 0579B7B9279FF27B00DEF4FF /* RxTest */; };
 		0579B7BD279FF29F00DEF4FF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0579B7BC279FF29F00DEF4FF /* SnapKit */; };
 		0579B7BF279FF8C000DEF4FF /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0579B7BE279FF8C000DEF4FF /* MTMapViewError.swift */; };
+		05F7AA2E27A0D5EF009B3D94 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F7AA2D27A0D5EF009B3D94 /* DetailListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		0579B7AC279FF16D00DEF4FF /* LocationInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewController.swift; sourceTree = "<group>"; };
 		0579B7B0279FF1AE00DEF4FF /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
 		0579B7BE279FF8C000DEF4FF /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
+		05F7AA2D27A0D5EF009B3D94 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 			children = (
 				0579B7AC279FF16D00DEF4FF /* LocationInformationViewController.swift */,
 				0579B7B0279FF1AE00DEF4FF /* LocationInformationViewModel.swift */,
+				05F7AA2D27A0D5EF009B3D94 /* DetailListCell.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				0579B7A9279FEF6100DEF4FF /* KLDocument.swift in Sources */,
 				0579B7AD279FF16D00DEF4FF /* LocationInformationViewController.swift in Sources */,
 				0579B7BF279FF8C000DEF4FF /* MTMapViewError.swift in Sources */,
+				05F7AA2E27A0D5EF009B3D94 /* DetailListCell.swift in Sources */,
 				0579B6D5279FE75700DEF4FF /* AppDelegate.swift in Sources */,
 				0579B7AB279FF04200DEF4FF /* DetailListCellData.swift in Sources */,
 				0579B6D7279FE75700DEF4FF /* SceneDelegate.swift in Sources */,
