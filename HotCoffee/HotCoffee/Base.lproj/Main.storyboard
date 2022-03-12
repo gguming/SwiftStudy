@@ -17,12 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bDA-nl-cbV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderTableViewCell" textLabel="1cW-TW-WwM" detailTextLabel="pNi-md-bSt" style="IBUITableViewCellStyleValue1" id="bDA-nl-cbV">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bDA-nl-cbV" id="UOt-ZF-b4o">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1cW-TW-WwM">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pNi-md-bSt">
+                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -34,6 +50,9 @@
                     <navigationItem key="navigationItem" title="Orders" id="zbN-db-nyQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hd7-ii-mAW"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addBtn" destination="Hd7-ii-mAW" id="hjy-3Y-BcH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Au8-yh-UZ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +70,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="449"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="T13-9A-iGs">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoffeeTypeTableViewCell" id="T13-9A-iGs">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T13-9A-iGs" id="VbZ-0Y-TqR">
@@ -61,14 +80,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Jce-Hz-XNa">
-                                <rect key="frame" x="104" y="554" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxQ-9w-8qc">
                                 <rect key="frame" x="107" y="635" width="200" height="34"/>
                                 <constraints>
@@ -90,21 +101,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4mD-TD-Px9" firstAttribute="top" secondItem="DxQ-9w-8qc" secondAttribute="bottom" constant="8" symbolic="YES" id="0fO-ew-9sD"/>
-                            <constraint firstItem="Jce-Hz-XNa" firstAttribute="centerX" secondItem="QxH-U0-5co" secondAttribute="centerX" id="8cO-mR-jj6"/>
                             <constraint firstItem="jYz-8U-z95" firstAttribute="width" secondItem="9RR-LL-d9u" secondAttribute="width" id="INf-Z9-2Fw"/>
+                            <constraint firstItem="DxQ-9w-8qc" firstAttribute="top" secondItem="jYz-8U-z95" secondAttribute="bottom" constant="98" id="Mwg-zf-J5W"/>
                             <constraint firstItem="jYz-8U-z95" firstAttribute="top" secondItem="QxH-U0-5co" secondAttribute="top" id="NFD-rf-fTD"/>
                             <constraint firstItem="jYz-8U-z95" firstAttribute="leading" secondItem="QxH-U0-5co" secondAttribute="leading" id="dT8-Zr-m1U"/>
                             <constraint firstItem="DxQ-9w-8qc" firstAttribute="centerX" secondItem="QxH-U0-5co" secondAttribute="centerX" id="p1g-sQ-lHS"/>
                             <constraint firstItem="4mD-TD-Px9" firstAttribute="centerX" secondItem="QxH-U0-5co" secondAttribute="centerX" id="qPz-fp-GWS"/>
                             <constraint firstItem="jYz-8U-z95" firstAttribute="height" secondItem="9RR-LL-d9u" secondAttribute="height" multiplier="0.5" constant="1" id="wo6-yy-yvH"/>
-                            <constraint firstItem="DxQ-9w-8qc" firstAttribute="top" secondItem="Jce-Hz-XNa" secondAttribute="bottom" constant="50" id="xG6-D8-Op3"/>
-                            <constraint firstItem="Jce-Hz-XNa" firstAttribute="top" secondItem="jYz-8U-z95" secondAttribute="bottom" constant="17" id="zU9-aj-77A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="N9H-xb-W2H">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="K1Z-ME-fp2"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="aoG-Hx-jA6"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="4mD-TD-Px9" id="8sp-WZ-wbv"/>
+                        <outlet property="nameTextField" destination="DxQ-9w-8qc" id="owW-He-DsW"/>
+                        <outlet property="tableView" destination="jYz-8U-z95" id="Oeu-z9-moz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRg-83-hNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +145,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ojf-SG-jei">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lnq-1u-2Uj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="hello" automaticallyAdjustsScrollViewInsets="NO" id="Lnq-1u-2Uj" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YX7-RK-Jkv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
