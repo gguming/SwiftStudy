@@ -19,16 +19,19 @@ class OrdersTableViewController: UITableViewController {
         addBtn.target = self
         addBtn.action = #selector(moveToAddOrder)
         populateOrder()
+        let vc = AddOrderViewController()
+        vc.delegate = self
     }
     
     private func populateOrder() {
-        guard let coffeeOrdersURL = URL(string: "https://warp-wiry-rugby.glitch.me/orders") else {
-            fatalError("URL was uncorrect")
-        }
-        
-        let resource = Resource<[Order]>(url: coffeeOrdersURL)
-        
-        WebService().load(resource: resource) { [weak self] result in
+//        guard let coffeeOrdersURL = URL(string: "https://warp-wiry-rugby.glitch.me/orders") else {
+//            fatalError("URL was uncorrect")
+//        }
+//
+//        let resource = Resource<[Order]>(url: coffeeOrdersURL)
+
+
+        WebService().load(resource: Order.all) { [weak self] result in
             switch result {
             case .success(let orders):
                 self?.orderListViewModel.orderViewModel = orders.map(OrderViewModel.init)
@@ -62,6 +65,21 @@ class OrdersTableViewController: UITableViewController {
         vc?.modalPresentationStyle = .fullScreen
         self.present(vc!, animated: true, completion: nil)
         print("click")
+    }
+    
+    
+}
+
+extension OrdersTableViewController: AddCoffeeOrderDelegate{
+    func addOrderViewControllerDidSave(order: Order, controller: UIViewController) {
+        controller.dismiss(animated: true, completion: nil)
+        let orderVM = OrderViewModel(order: order)
+        self.orderListViewModel.orderViewModel.append(orderVM)
+        tableView.reloadData()
+    }
+    
+    func addOrderViewControllerDidClose(controller: UIViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
     

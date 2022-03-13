@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+protocol AddCoffeeOrderDelegate {
+    func addOrderViewControllerDidSave(order: Order, controller: UIViewController)
+    func addOrderViewControllerDidClose(controller: UIViewController)
+}
+
 
 class AddOrderViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -25,14 +30,30 @@ class AddOrderViewController: UIViewController {
         vm.email = email
         vm.selectedType = vm.types[indexPath.row]
         vm.selectedSize = selectedCoffeeSize
+        
+        WebService().load(resource: Order.create(vm)) { result in
+            switch result {
+            case .success(let order):
+                if let order = order, let delegate = self.delegate {
+                    DispatchQueue.main.async {
+                        delegate.addOrderViewControllerDidSave(order: order, controller: self)
+                    }
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     @IBAction func cancel() {
-        
+        if let delegate = self.delegate {
+            delegate.addOrderViewControllerDidClose(controller: self)
+        }
     }
     
     private var vm = AddCoffeeViewModel()
     private var coffeeSegmentControl: UISegmentedControl!
+    var delegate: AddCoffeeOrderDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

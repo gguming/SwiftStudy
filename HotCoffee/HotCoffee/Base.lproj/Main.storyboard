@@ -111,8 +111,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="N9H-xb-W2H">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="K1Z-ME-fp2"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="aoG-Hx-jA6"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="K1Z-ME-fp2">
+                            <connections>
+                                <action selector="cancel" destination="lqj-8o-CcR" id="IuF-aJ-xH6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="aoG-Hx-jA6">
+                            <connections>
+                                <action selector="save" destination="lqj-8o-CcR" id="dWM-kc-YtN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="4mD-TD-Px9" id="8sp-WZ-wbv"/>
