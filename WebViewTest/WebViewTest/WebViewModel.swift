@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import CoreData
+import SwiftUI
 
 typealias WebNavigation = WebViewModel.Navigation
 
@@ -20,12 +21,14 @@ class WebViewModel: ObservableObject {
         case NAVER
         case GOOGLE
         case TESTURL
+        case PMT
         
         var url: URL? {
             switch self {
             case .NAVER: return URL(string: "https://naver.com")
             case .GOOGLE: return URL(string: "https://google.com")
             case .TESTURL: return URL(string: "https://tuentuenna.github.io/simple_js_alert/")
+            case .PMT: return URL(string: "http://dev.paymint.co.kr:10020/myinfo/merchants")
                 
             }
         }

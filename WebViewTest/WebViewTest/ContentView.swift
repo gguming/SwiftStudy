@@ -82,6 +82,12 @@ struct ContentView: View {
                 }, label: {
                     Text("구글")
                 })
+                Button(action: {
+                    print("페이민트")
+                    myWebVM.changedUrlSubject.send(.PMT)
+                }, label: {
+                    Text("페이민트")
+                })
             })
             )
     }

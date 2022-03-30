@@ -25,6 +25,7 @@ struct MyWebView: UIViewRepresentable {
         guard let url = URL(string: self.urlToLoad) else {
             return WKWebView()
         }
+//        let url = URL(string: self.urlToLoad)
         let webview = WKWebView(frame: .zero, configuration: createWKWebConfig())
         
         // wkwebview 의 delegate 연결을 위한 coordinator 설정
