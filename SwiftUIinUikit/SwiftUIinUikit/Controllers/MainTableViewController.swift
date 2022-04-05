@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 
 class MainTableViewController: UITableViewController {
@@ -14,7 +15,9 @@ class MainTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        populateMovies()
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.tableView.register(MoviesTableViewCell.self, forCellReuseIdentifier: "MoviesTableViewCell")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,7 +27,7 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let movie = self.movies[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MoviesTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MoviesTableViewCell", for: indexPath) as! MoviesTableViewCell
         
         cell.textLabel?.text = movie.title
         
@@ -37,6 +40,11 @@ class MainTableViewController: UITableViewController {
             }
         }
         return cell
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let movie = movies[indexPath.row]
+        let movieDetailView = UIHostingController(rootView: MovieDetailView(movie: movie))
+        self.navigationController?.pushViewController(movieDetailView, animated: true)
     }
     
     private func populateMovies() {
