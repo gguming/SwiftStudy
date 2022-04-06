@@ -30,6 +30,7 @@
 		05AA65C527FD5DAE002D0124 /* FilteringOperations.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilteringOperations.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		05AA65C727FD69FC002D0124 /* CombiningOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombiningOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		05AA65C827FD6F62002D0124 /* SequenceOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SequenceOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		05AA65C927FD8B08002D0124 /* URLSessionTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLSessionTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				05AA65C527FD5DAE002D0124 /* FilteringOperations.playground */,
 				05AA65C727FD69FC002D0124 /* CombiningOperators.playground */,
 				05AA65C827FD6F62002D0124 /* SequenceOperators.playground */,
+				05AA65C927FD8B08002D0124 /* URLSessionTest.playground */,
 			);
 			path = CombineForNoti;
 			sourceTree = "<group>";
