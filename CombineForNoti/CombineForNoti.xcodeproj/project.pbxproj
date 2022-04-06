@@ -13,6 +13,9 @@
 		058EB06227FBE30900247EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058EB06027FBE30900247EF3 /* Main.storyboard */; };
 		058EB06427FBE30A00247EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058EB06327FBE30A00247EF3 /* Assets.xcassets */; };
 		058EB06727FBE30A00247EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058EB06527FBE30A00247EF3 /* LaunchScreen.storyboard */; };
+		05AA65CB27FD8E30002D0124 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA65CA27FD8E30002D0124 /* PostListTableViewController.swift */; };
+		05AA65CE27FD8F07002D0124 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA65CD27FD8F07002D0124 /* WebService.swift */; };
+		05AA65D127FD8F34002D0124 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AA65D027FD8F34002D0124 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		05AA65C727FD69FC002D0124 /* CombiningOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombiningOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		05AA65C827FD6F62002D0124 /* SequenceOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SequenceOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		05AA65C927FD8B08002D0124 /* URLSessionTest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URLSessionTest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		05AA65CA27FD8E30002D0124 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		05AA65CD27FD8F07002D0124 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		05AA65D027FD8F34002D0124 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +69,12 @@
 		058EB05927FBE30900247EF3 /* CombineForNoti */ = {
 			isa = PBXGroup;
 			children = (
+				05AA65CF27FD8F2B002D0124 /* Model */,
+				05AA65CC27FD8EF3002D0124 /* WebService */,
 				058EB05A27FBE30900247EF3 /* AppDelegate.swift */,
 				058EB05C27FBE30900247EF3 /* SceneDelegate.swift */,
 				058EB05E27FBE30900247EF3 /* ViewController.swift */,
+				05AA65CA27FD8E30002D0124 /* PostListTableViewController.swift */,
 				058EB06027FBE30900247EF3 /* Main.storyboard */,
 				058EB06327FBE30A00247EF3 /* Assets.xcassets */,
 				058EB06527FBE30A00247EF3 /* LaunchScreen.storyboard */,
@@ -79,6 +88,22 @@
 				05AA65C927FD8B08002D0124 /* URLSessionTest.playground */,
 			);
 			path = CombineForNoti;
+			sourceTree = "<group>";
+		};
+		05AA65CC27FD8EF3002D0124 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				05AA65CD27FD8F07002D0124 /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		05AA65CF27FD8F2B002D0124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05AA65D027FD8F34002D0124 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +180,9 @@
 				058EB05F27FBE30900247EF3 /* ViewController.swift in Sources */,
 				058EB05B27FBE30900247EF3 /* AppDelegate.swift in Sources */,
 				058EB05D27FBE30900247EF3 /* SceneDelegate.swift in Sources */,
+				05AA65D127FD8F34002D0124 /* Post.swift in Sources */,
+				05AA65CE27FD8F07002D0124 /* WebService.swift in Sources */,
+				05AA65CB27FD8E30002D0124 /* PostListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
