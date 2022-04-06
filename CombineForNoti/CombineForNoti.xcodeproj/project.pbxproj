@@ -37,6 +37,7 @@
 		05AA65CA27FD8E30002D0124 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 		05AA65CD27FD8F07002D0124 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		05AA65D027FD8F34002D0124 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		05AA65D227FD934E002D0124 /* PrintEvet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PrintEvet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 				05AA65C727FD69FC002D0124 /* CombiningOperators.playground */,
 				05AA65C827FD6F62002D0124 /* SequenceOperators.playground */,
 				05AA65C927FD8B08002D0124 /* URLSessionTest.playground */,
+				05AA65D227FD934E002D0124 /* PrintEvet.playground */,
 			);
 			path = CombineForNoti;
 			sourceTree = "<group>";
