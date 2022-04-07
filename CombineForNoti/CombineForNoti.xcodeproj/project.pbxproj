@@ -19,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053D502427FE7A4300389A57 /* Debug - event.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Debug - event.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		053D502527FE7F5000389A57 /* RunLoop.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RunLoop.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		053D502627FE80BF00389A57 /* Timer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Timer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		058EB05727FBE30900247EF3 /* CombineForNoti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineForNoti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		058EB05A27FBE30900247EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		058EB05C27FBE30900247EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +91,9 @@
 				05AA65C827FD6F62002D0124 /* SequenceOperators.playground */,
 				05AA65C927FD8B08002D0124 /* URLSessionTest.playground */,
 				05AA65D227FD934E002D0124 /* PrintEvet.playground */,
+				053D502427FE7A4300389A57 /* Debug - event.playground */,
+				053D502527FE7F5000389A57 /* RunLoop.playground */,
+				053D502627FE80BF00389A57 /* Timer.playground */,
 			);
 			path = CombineForNoti;
 			sourceTree = "<group>";
