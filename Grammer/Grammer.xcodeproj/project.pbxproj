@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		050593F828064E8D00510E32 /* AccessControl.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AccessControl.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		058EB07727FBFB3300247EF3 /* Grammer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grammer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		058EB07A27FBFB3300247EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		058EB07C27FBFB3300247EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 				058EB08827FBFB3400247EF3 /* Info.plist */,
 				058EB08F27FBFB9600247EF3 /* Inheritance.playground */,
 				05B3911527FFD684009AC713 /* Initialize.playground */,
+				050593F828064E8D00510E32 /* AccessControl.playground */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
