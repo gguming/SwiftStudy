@@ -9,5 +9,5 @@ class Person {
         return "이름 : \(name). 나이 : \(age)"
     }
     
-    fu
+    
 }
