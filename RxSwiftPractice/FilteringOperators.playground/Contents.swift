@@ -47,8 +47,6 @@ Observable.of(1,2,3,4,5,6,7,8)
     })
     .disposed(by: disposeBag )
 
-
-
 print("------skip---------")
 // skip한 요소 이후부터 방출
 
