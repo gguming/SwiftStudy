@@ -7,13 +7,14 @@ class SomeClass {
     static var computedTypeProperty: Int {
         return 27
     }
-    class var overrideableComputedTypeProperty: Int {
+    static var overrideableComputedTypeProperty: Int {
         return 107
     }
 }
 
+SomeClass.storedTypeProperty // Some Value
 SomeClass.storedTypeProperty = "Another Value"
-SomeClass.storedTypeProperty
+SomeClass.storedTypeProperty // Another Value
 
 
 struct AudioChannel {
@@ -42,3 +43,22 @@ AudioChannel.maxInputLevelForAllChannels
 rightChannel.currentLevel = 11
 AudioChannel.maxInputLevelForAllChannels
 
+//var y: Double = 1.1
+//var x: Int = 7
+//print(Int(x*y - 1))
+
+
+func solution(_ w:Int, _ h:Int) -> Int64{
+    var answer:Int64 = 0
+    var inclination: Double = -(Double(h)/Double(w))
+    for i in 1..<w {
+        answer += Int64(getY(x: i, y: h, inclination: inclination))
+    }
+    return answer*2
+}
+
+func getY(x: Int, y: Int, inclination: Double) -> Int {
+    return Int(floor(Double(x)*inclination + Double(y)))
+}
+
+solution(8, 12)
