@@ -25,6 +25,11 @@
 		A41F5796281AE03500335CCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A41F5798281AE03500335CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A41F579E281AE04D00335CCB /* OpenChat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OpenChat.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A4234C892826360C002B119B /* No.1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = No.1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A4234C8A28263DDF002B119B /* No2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = No2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A4234C8B28264E11002B119B /* No.3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = No.3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A44CD1D4281D1ED6003D7E8A /* Rectangle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Rectangle.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A4C7F667281E3F720081413D /* RemovePair.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemovePair.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 		A41F5789281AE03400335CCB /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				A4234C88282635F7002B119B /* Kakao */,
 				A41F578A281AE03400335CCB /* AppDelegate.swift */,
 				A41F578C281AE03400335CCB /* SceneDelegate.swift */,
 				A41F578E281AE03400335CCB /* ViewController.swift */,
@@ -65,8 +71,20 @@
 				A41F5795281AE03500335CCB /* LaunchScreen.storyboard */,
 				A41F5798281AE03500335CCB /* Info.plist */,
 				A41F579E281AE04D00335CCB /* OpenChat.playground */,
+				A44CD1D4281D1ED6003D7E8A /* Rectangle.playground */,
+				A4C7F667281E3F720081413D /* RemovePair.playground */,
 			);
 			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		A4234C88282635F7002B119B /* Kakao */ = {
+			isa = PBXGroup;
+			children = (
+				A4234C892826360C002B119B /* No.1.playground */,
+				A4234C8A28263DDF002B119B /* No2.playground */,
+				A4234C8B28264E11002B119B /* No.3.playground */,
+			);
+			path = Kakao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
