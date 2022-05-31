@@ -17,13 +17,13 @@ struct ContentView: View {
     @State var text1 = ""
     @State var focused: [Bool] = [true, false, false, false]
     
-    @State private var numberOfCells: Int = 8
+    @State private var numberOfCells: Int = 4
         @State private var currentlySelectedCell = 0
 
         var body: some View {
             HStack {
-                ForEach(0 ..< self.numberOfCells) { index in
-                    CharacterInputCell(currentlySelectedCell: self.$currentlySelectedCell, index: index)
+                ForEach(0 ..< self.numberOfCells, id: \.self) { index in
+                    CharacterInputCell(currentlySelectedCell: self.$currentlySelectedCell, isfocusAble: $focused, index: index, tag: index)
                 }
             }
         }
@@ -106,34 +106,37 @@ struct ContentView: View {
 //
 //}
 
-struct SectionedTextField: View {
-    @State private var numberOfCells: Int = 8
-    @State private var currentlySelectedCell = 0
-
-    var body: some View {
-        HStack {
-            ForEach(0 ..< self.numberOfCells, id: \.self) { index in
-                CharacterInputCell(currentlySelectedCell: self.$currentlySelectedCell, index: index, tag: index)
-            }
-        }
-    }
-}
+//struct SectionedTextField: View {
+//    @State private var numberOfCells: Int = 8
+//    @State private var currentlySelectedCell = 0
+//
+//    var body: some View {
+//        HStack {
+//            ForEach(0 ..< self.numberOfCells, id: \.self) { index in
+//                CharacterInputCell(currentlySelectedCell: self.$currentlySelectedCell, index: index, tag: index)
+//            }
+//        }
+//    }
+//}
 
 
 struct CharacterInputCell: View {
     @State private var textValue: String = ""
     @Binding var currentlySelectedCell: Int
-
+    @Binding var isfocusAble: [Bool]
     var index: Int
     var tag: Int
 
     var responder: Bool {
         print(index == currentlySelectedCell)
+        print(index)
+        print(currentlySelectedCell)
+        print("=====================")
         return index == currentlySelectedCell
     }
 
     var body: some View {
-        CustomTextField(text: $textValue, currentlySelectedCell: $currentlySelectedCell, isFirstResponder: responder, tag: tag)
+        CustomTextField(text: $textValue, currentlySelectedCell: $currentlySelectedCell, isfocusAble: $isfocusAble, index: index, isFirstResponder: responder, tag: tag)
             .frame(height: 20)
             .frame(maxWidth: .infinity, alignment: .center)
             .padding([.trailing, .leading], 10)
@@ -151,6 +154,8 @@ struct CustomTextField: UIViewRepresentable {
 
     @Binding var text: String
     @Binding var currentlySelectedCell: Int
+    @Binding var isfocusAble: [Bool]
+    var index: Int
     var isFirstResponder: Bool = false
     var tag: Int
 
@@ -171,9 +176,29 @@ struct CustomTextField: UIViewRepresentable {
         func textFieldDidChangeSelection(_ textField: UITextField) {
             DispatchQueue.main.async {
                 self.text = textField.text ?? ""
-//                self.currentlySelectedCell = self.myTextField.tag
+                self.currentlySelectedCell = textField.tag
+                print("이것때문에 그런거지")
+//                self.didBecomeFirstResponder = false
 //                print(self.currentlySelectedCell)
 //                print(self.myTextField.tag)
+                if self.text.count < 4 {
+                switch self.myTextField.tag {
+                case 0:
+                    self.myTextField.isfocusAble = [true, false, false, false]
+                    self.myTextField.text = textField.text ?? ""
+                case 1:
+                    self.myTextField.isfocusAble = [false, true, false, false]
+                    self.myTextField.text = textField.text ?? ""
+                case 2:
+                    self.myTextField.isfocusAble = [false, false, true, false]
+                    self.myTextField.text = textField.text ?? ""
+                case 3:
+                    self.myTextField.isfocusAble = [false, false, false, true]
+                    self.myTextField.text = textField.text ?? ""
+                default:
+                    print(11)
+                }
+                }
 //
             }
         }
@@ -184,9 +209,26 @@ struct CustomTextField: UIViewRepresentable {
             guard let stringRange = Range(range, in: currentText) else { return false }
 
             let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
-
-            if updatedText.count == 4 {
-                self.currentlySelectedCell += 1
+            print(updatedText)
+            if updatedText.count == 4 && myTextField.tag != 3 {
+                self.currentlySelectedCell = myTextField.tag + 1
+//                didBecomeFirstResponder = false
+                switch self.myTextField.tag {
+                               case 0:
+                                   self.myTextField.isfocusAble = [false, true, false, false]
+                                   self.myTextField.text = textField.text ?? ""
+                               case 1:
+                                   self.myTextField.isfocusAble = [false, false, true, false]
+                                   self.myTextField.text = textField.text ?? ""
+                               case 2:
+                                   self.myTextField.isfocusAble = [false, false, false, true]
+                                   self.myTextField.text = textField.text ?? ""
+                               case 3:
+                                   self.myTextField.isfocusAble = [false, false, false, false]
+                                   self.myTextField.text = textField.text ?? ""
+                               default:
+                                   print(11)
+                               }
             }
 
             return updatedText.count <= 4
@@ -208,11 +250,17 @@ struct CustomTextField: UIViewRepresentable {
 
     func updateUIView(_ uiView: UITextField, context: UIViewRepresentableContext<CustomTextField>) {
         uiView.text = text
-        if isFirstResponder && !context.coordinator.didBecomeFirstResponder  {
-            uiView.becomeFirstResponder()
-            print("여기서 바뀌는건가")
-            context.coordinator.didBecomeFirstResponder = true
-        }
+//        if //uiView.tag == currentlySelectedCell {
+//            isFirstResponder && !context.coordinator.didBecomeFirstResponder  {
+//            uiView.becomeFirstResponder()
+//            print("여기서 바뀌는건가")
+//            context.coordinator.didBecomeFirstResponder = true
+        if isfocusAble[tag] {
+                   uiView.becomeFirstResponder()
+               } else {
+                   uiView.resignFirstResponder()
+               }
+        
     }
 
 }
