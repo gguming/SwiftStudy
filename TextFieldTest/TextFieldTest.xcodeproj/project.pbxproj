@@ -11,6 +11,7 @@
 		05B52487284093620010246C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B52486284093620010246C /* ContentView.swift */; };
 		05B52489284093630010246C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B52488284093630010246C /* Assets.xcassets */; };
 		05B5248C284093630010246C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05B5248B284093630010246C /* Preview Assets.xcassets */; };
+		05B524932840939B0010246C /* KeyinTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B524922840939B0010246C /* KeyinTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		05B52486284093620010246C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		05B52488284093630010246C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05B5248B284093630010246C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05B524922840939B0010246C /* KeyinTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyinTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				05B52486284093620010246C /* ContentView.swift */,
 				05B52488284093630010246C /* Assets.xcassets */,
 				05B5248A284093630010246C /* Preview Content */,
+				05B524922840939B0010246C /* KeyinTextFieldView.swift */,
 			);
 			path = TextFieldTest;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B52487284093620010246C /* ContentView.swift in Sources */,
+				05B524932840939B0010246C /* KeyinTextFieldView.swift in Sources */,
 				05B52485284093620010246C /* TextFieldTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
