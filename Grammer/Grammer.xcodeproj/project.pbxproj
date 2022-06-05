@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4616E0A284C92D2004F8993 /* Protocol.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Protocol.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A49184FF282C00E10058BB41 /* Grammer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grammer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4918502282C00E10058BB41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4918504282C00E10058BB41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 				A491850D282C00E30058BB41 /* LaunchScreen.storyboard */,
 				A4918510282C00E30058BB41 /* Info.plist */,
 				A4918516282C00F30058BB41 /* PropertyWrapper.playground */,
+				A4616E0A284C92D2004F8993 /* Protocol.playground */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
