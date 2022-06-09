@@ -61,9 +61,9 @@ struct DropDownOption: Hashable {
     let key: String
     let value: String
     
-    public static func == (lhs: DropDownOption, rhs: DropDownOption) -> Bool {
-        return lhs.key == rhs.key
-    }
+//    public static func == (lhs: DropDownOption, rhs: DropDownOption) -> Bool {
+//        return lhs.key == rhs.key
+//    }
 }
 
 struct Dropdown: View {
