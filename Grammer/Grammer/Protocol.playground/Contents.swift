@@ -85,3 +85,5 @@ var neoguri22 = Person5(name: "너구리", age: 7)
 neoguri22.currentAge
 neoguri22.currentAge = 20
 // neoguri22.age : 20
+
+
