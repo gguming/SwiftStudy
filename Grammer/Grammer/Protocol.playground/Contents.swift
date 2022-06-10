@@ -115,12 +115,12 @@ print(rectangle1.getArea()) // 100
 
 
 protocol Togglable {
-    func toggle()
+    mutating func toggle()
 }
 
 enum OnOffSwitch: Togglable {
     case off, on
-    func toggle() {
+    mutating func toggle() {
         switch self {
         case .off:
             self = .on
