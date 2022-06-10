@@ -87,3 +87,48 @@ neoguri22.currentAge = 20
 // neoguri22.age : 20
 
 
+
+protocol SomeProtocol {
+    func nextInteger(num1: Int, num2: Int) -> Int
+}
+
+
+func nextInteger(num1: Int = 1, num2: Int) -> Int {
+    return num1 + num2
+}
+
+protocol RectangleArea {
+    func getArea() -> Int
+}
+
+
+struct Rectangle: RectangleArea {
+    var width: Int
+    var height: Int
+    func getArea() -> Int {
+        return width*height
+    }
+}
+
+let rectangle1 = Rectangle(width: 10, height: 10)
+print(rectangle1.getArea()) // 100
+
+
+protocol Togglable {
+    func toggle()
+}
+
+enum OnOffSwitch: Togglable {
+    case off, on
+    func toggle() {
+        switch self {
+        case .off:
+            self = .on
+        case .on:
+            self = .off
+        }
+    }
+}
+var lightSwitch = OnOffSwitch.off
+lightSwitch.toggle()
+// lightSwitch .on
