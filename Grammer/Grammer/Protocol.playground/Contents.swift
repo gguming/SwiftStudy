@@ -132,3 +132,75 @@ enum OnOffSwitch: Togglable {
 var lightSwitch = OnOffSwitch.off
 lightSwitch.toggle()
 // lightSwitch .on
+
+
+protocol SomeProtocol2 {
+    init(somePrameter: Int)
+}
+
+class SomeClass2: SomeProtocol2 {
+    required init(somePrameter: Int) {
+        
+    }
+}
+
+protocol SomeProtocol3 {
+    init()
+}
+
+
+class SuperClass {
+    init() {}
+}
+
+class SubClass: SuperClass, SomeProtocol3 {
+    required override init() {
+        <#code#>
+    }
+}
+
+
+// 주사위 랜덤 번호 생성 프로토콜
+protocol RandomNumberGenerator {
+    func random() -> Double
+}
+
+// 프로토콜 상속
+class LinearCongruentialGenerator: RandomNumberGenerator {
+    var lastRandom = 42.0
+    let m = 139968.0
+    let a = 3877.0
+    let c = 29573.0
+    // 프로토콜 준수
+    func random() -> Double {
+        lastRandom = ((lastRandom * a + c)
+            .truncatingRemainder(dividingBy:m))
+        return lastRandom / m
+    }
+}
+// 인스턴스 생성
+let generator = LinearCongruentialGenerator()
+
+// 클래스 정의
+class Dice {
+    let sides: Int
+    // 프로토콜 타입으로 사용
+    let generator: RandomNumberGenerator
+    init(sides: Int, generator: RandomNumberGenerator) {
+        self.sides = sides
+        self.generator = generator
+    }
+    func roll() -> Int {
+        return Int(generator.random() * Double(sides)) + 1
+    }
+}
+
+var d6 = Dice(sides: 6, generator: LinearCongruentialGenerator())
+for _ in 1...5 {
+    print("Random dice roll is \(d6.roll())")
+}
+// Random dice roll is 3
+// Random dice roll is 5
+// Random dice roll is 4
+// Random dice roll is 5
+// Random dice roll is 4
