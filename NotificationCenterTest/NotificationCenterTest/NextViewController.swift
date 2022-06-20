@@ -1,23 +1,41 @@
 //
-//  NextViewController.swift
+//  ViewController.swift
 //  NotificationCenterTest
 //
 //  Created by SUN on 2022/06/19.
 //
 
-import Foundation
 import UIKit
 
-
+// 다음 화면
 class NextViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    @IBAction func makeNextVCBlue(_ sender: Any) {
+        // notification 보냄
+        NotificationCenter.default.post(name: .changeBackgroundColor,
+                                        object: UIColor.blue)
     }
     
-    @objc func changeBackground(_ notification: Notification) {
-        if let color = notification.object as? UIColor {
-            self.view.backgroundColor = color
-        }
+    @IBAction func makeNextVCRed(_ sender: Any) {
+        NotificationCenter.default.post(name: .changeBackgroundColor,
+                                        object: UIColor.red)
     }
+    
+    @IBAction func makeNextVCGreen(_ sender: Any) {
+        NotificationCenter.default.post(name: .changeBackgroundColor,
+                                        object: UIColor.green)
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+    }
+
+
 }
+
+extension Notification.Name {
+    // notification 이름 등록
+    static let changeBackgroundColor = Notification.Name("changeBackgroundColor")
+}
+
