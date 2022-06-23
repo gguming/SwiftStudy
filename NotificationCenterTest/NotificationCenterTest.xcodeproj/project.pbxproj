@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A458B41F285EFC4A00A18238 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458B41E285EFC4A00A18238 /* AppDelegate.swift */; };
 		A458B421285EFC4A00A18238 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458B420285EFC4A00A18238 /* SceneDelegate.swift */; };
-		A458B423285EFC4A00A18238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458B422285EFC4A00A18238 /* ViewController.swift */; };
+		A458B423285EFC4A00A18238 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458B422285EFC4A00A18238 /* NextViewController.swift */; };
 		A458B426285EFC4A00A18238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A458B424285EFC4A00A18238 /* Main.storyboard */; };
 		A458B428285EFC4B00A18238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A458B427285EFC4B00A18238 /* Assets.xcassets */; };
 		A458B42B285EFC4B00A18238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A458B429285EFC4B00A18238 /* LaunchScreen.storyboard */; };
+		A458B433285F016F00A18238 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A458B432285F016F00A18238 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A458B41B285EFC4A00A18238 /* NotificationCenterTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationCenterTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A458B41E285EFC4A00A18238 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A458B420285EFC4A00A18238 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A458B422285EFC4A00A18238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A458B422285EFC4A00A18238 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 		A458B425285EFC4A00A18238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A458B427285EFC4B00A18238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A458B42A285EFC4B00A18238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A458B42C285EFC4B00A18238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A458B432285F016F00A18238 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				A458B41E285EFC4A00A18238 /* AppDelegate.swift */,
 				A458B420285EFC4A00A18238 /* SceneDelegate.swift */,
-				A458B422285EFC4A00A18238 /* ViewController.swift */,
+				A458B422285EFC4A00A18238 /* NextViewController.swift */,
+				A458B432285F016F00A18238 /* ViewController.swift */,
 				A458B424285EFC4A00A18238 /* Main.storyboard */,
 				A458B427285EFC4B00A18238 /* Assets.xcassets */,
 				A458B429285EFC4B00A18238 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A458B423285EFC4A00A18238 /* ViewController.swift in Sources */,
+				A458B423285EFC4A00A18238 /* NextViewController.swift in Sources */,
+				A458B433285F016F00A18238 /* ViewController.swift in Sources */,
 				A458B41F285EFC4A00A18238 /* AppDelegate.swift in Sources */,
 				A458B421285EFC4A00A18238 /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
