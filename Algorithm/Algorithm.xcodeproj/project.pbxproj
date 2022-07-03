@@ -28,6 +28,7 @@
 		A4234C892826360C002B119B /* No.1.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = No.1.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A4234C8A28263DDF002B119B /* No2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = No2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A4234C8B28264E11002B119B /* No.3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = No.3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A42D1A0C2869E6310022474C /* MakePrimeNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MakePrimeNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A44CD1D4281D1ED6003D7E8A /* Rectangle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Rectangle.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A4C7F667281E3F720081413D /* RemovePair.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemovePair.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -73,6 +74,7 @@
 				A41F579E281AE04D00335CCB /* OpenChat.playground */,
 				A44CD1D4281D1ED6003D7E8A /* Rectangle.playground */,
 				A4C7F667281E3F720081413D /* RemovePair.playground */,
+				A42D1A0C2869E6310022474C /* MakePrimeNumber.playground */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";

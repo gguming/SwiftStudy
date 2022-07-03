@@ -27,6 +27,7 @@
 		A491850E282C00E30058BB41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4918510282C00E30058BB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4918516282C00F30058BB41 /* PropertyWrapper.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PropertyWrapper.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A4E7BA9A287153E70057875E /* Generic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Generic.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				A4918516282C00F30058BB41 /* PropertyWrapper.playground */,
 				A4616E0A284C92D2004F8993 /* Protocol.playground */,
 				A44C25592863660700586C51 /* HighOrderFunction.playground */,
+				A4E7BA9A287153E70057875E /* Generic.playground */,
 			);
 			path = Grammer;
 			sourceTree = "<group>";
