@@ -30,6 +30,7 @@
 		A4234C8B28264E11002B119B /* No.3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = No.3.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A42D1A0C2869E6310022474C /* MakePrimeNumber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MakePrimeNumber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A44CD1D4281D1ED6003D7E8A /* Rectangle.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Rectangle.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A47A19A228805CF10026AB1C /* RecommandId.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RecommandId.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A4C7F667281E3F720081413D /* RemovePair.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RemovePair.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -75,6 +76,7 @@
 				A44CD1D4281D1ED6003D7E8A /* Rectangle.playground */,
 				A4C7F667281E3F720081413D /* RemovePair.playground */,
 				A42D1A0C2869E6310022474C /* MakePrimeNumber.playground */,
+				A47A19A228805CF10026AB1C /* RecommandId.playground */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
