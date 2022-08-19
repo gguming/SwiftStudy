@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  translate
+
+  Created by SUN on 2022/08/17.
+  
+*/
+
+// "키값" = "표시될 언어 값";
+
+// Tabar Title
+"Translate" = "Translate";
+"Bookmark" = "Bookmark";
+
+// Language
+"Korean" = "Korean";
+"English" = "English";
+"Japanese" = "Japanese";
+"Chinese" = "Chinese";
+
+
+"Cancel" = "Cancel";
+
+// placeholder
+"Enter_Text" = "Enter Text";
+
