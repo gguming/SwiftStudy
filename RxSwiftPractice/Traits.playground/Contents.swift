@@ -11,8 +11,8 @@ enum TraitsError: Error {
 
 print("--------single1--------")
 
-Single<String>.just("✅")
-    .subscribe {
+Single<String>.just("성공")
+    .subscribe { 
         print($0)
     } onFailure: {
         print("error: \($0)")
@@ -49,7 +49,7 @@ enum JSONError: Error {
 }
 
 let json1 = """
-    {"name" : "park"}
+    {"name" : "neoguri"}
     """
 
 let json2 = """

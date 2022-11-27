@@ -9,13 +9,19 @@ Observable<Int>.just(1)
         print($0)
     })
 
-Observable<Int>.of(1,2,3,4,5)
+Observable.just([1,2,3,4,5])
+    .subscribe(onNext: {
+        print($0)
+    })
+
+
+Observable.of(1,2,3,4,5)
     .subscribe(onNext: {
         print($0)
     })
 //of 는 여러개를 받을 수 있고 타입 추론 가능
 // 아래는 just를 쓴것과 같음
-Observable.of([1,2,3,4,5])
+Observable.of([1,2,3,4,"5"])
     .subscribe(onNext: {
         print($0)
     })
@@ -63,13 +69,13 @@ Observable<Void>.never()
             print($0)
         },
         onCompleted: {
-            print("complete")
+//            print("complete")
         }
     )
 
-Observable.range(start: 1, count: 9)
+Observable.range(start: 1, count: 5)
     .subscribe(onNext: {
-        print("2*\($0) = \(2*$0)")
+        print($0)
     })
 
 
@@ -96,10 +102,7 @@ print("------create1-------")
 
 Observable.create { observer -> Disposable in
     observer.onNext(1)
-//    //위와 같은 코드
-//    observer.on(.next(1))
     observer.onCompleted()
-    observer.onNext(2)
     
     return Disposables.create()
 }
@@ -117,8 +120,6 @@ enum MyError: Error {
 Observable.create { observer -> Disposable in
     observer.onNext(1)
     observer.onError(MyError.anError)
-    observer.onCompleted()
-    observer.onNext(2)
     return Disposables.create()
 }
 .subscribe {
@@ -153,9 +154,9 @@ let factory: Observable<String> = Observable.deferred {
     oposite = !oposite
     
     if oposite {
-        return Observable.of("👍")
+        return Observable.of("O")
     } else {
-        return Observable.of("👎")
+        return Observable.of("X")
     }
 }
 
