@@ -162,3 +162,4 @@ Completable.create{ observer -> Disposable in
 }
 .disposed(by: disposeBag)
 
+[1,2].map({$0})

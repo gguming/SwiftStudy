@@ -1,4 +1,6 @@
 import RxSwift
+import Foundation
+
 
 let disposeBag = DisposeBag()
 print("-------PublishSubject---------")
@@ -55,7 +57,7 @@ behaviorSubject.subscribe{
 }
 .disposed(by: disposeBag)
 
-//behaviorSubject.onError(SubjectError.error1)
+
 behaviorSubject.subscribe{
     print("두번째 구독 : ", $0.element ?? $0)
 }
@@ -91,3 +93,8 @@ replaySubject.subscribe{
     print("세번쨰 구독 : ", $0.element ?? $0)
 }
 .disposed(by: disposeBag)
+
+
+class Object: NSObject {
+    
+}
